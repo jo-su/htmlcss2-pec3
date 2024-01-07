@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>Liga de tennis</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+
+    <main class="mx-5 mt-3">
+      <h2 class="text-center text-3xl font-serif p-5">Contacto</h2>
+
+      <div class="cta-container rounded">
+        <include src="./views/cta_inscription.html"></include>
+      </div>
+
+    <form netlify>
+      <div class="space-y-12">
+          <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+            <div class="sm:col-span-3">
+              <label for="nombre" class="block text-sm font-medium leading-6 text-gray-900">Nombre</label>
+              <div class="mt-2">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" autocomplete="nombre" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+            <div class="sm:col-span-3">
+              <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
+              <div class="mt-2">
+                <input type="email" name="email" id="email" autocomplete="email" placeholder="name@example.com" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+            <div class="col-span-full">
+              <label for="tipo" class="block text-sm font-medium leading-6 text-gray-900">Tipo de solicitud</label>
+              <div class="mt-2">
+                <select class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary-600 " id="tipo" name="tipo" autocomplete="tipo">
+                  <option selected>Selecciona un tipo de solicitud</option>
+                  <option value="info">Información general</option>
+                  <option value="inscripcion">Inscripción</option>
+                  <option value="prensa">Prensa y Medios de comunicación</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-span-full">
+              <label for="mensaje" class="block text-sm font-medium leading-6 text-gray-900">Mensaje</label>
+              <div class="mt-2">
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe los detalles de tu solicitud" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"></textarea>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="mt-6 flex items-center justify-start gap-x-6">
+        <button type="submit" class="button">Enviar</button>
+      </div>
+    </form>
+
+      
+    </main>
+
+    <include src="./views/footer.html"></include>
+    
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>Liga de tennis</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+
+    <main class="mx-5 mt-3">
+      <h2 class="text-center text-3xl font-serif p-5">Participantes</h2>
+      <div class="p-5 mb-3 flex flex-row flex-wrap items-center justify-center md:justify-around gap-2">
+        <include 
+            src="views/participant_card.html" 
+            locals='{
+                "image": "ali-karimiboroujeni-5-qwtyU0BFg-unsplash.jpg",
+                "name": "Nuria",
+                "desc": "Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Ac tincidunt vitae semper quis lectus nulla at volutpat. Sed odio morbi quis commodo."
+            }'
+        ></include>
+        <include 
+            src="views/participant_card.html" 
+            locals='{
+                "image": "braden-egli-k_H7OSg_fUs-unsplash.jpg",
+                "name": "Luis",
+                "desc": "Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Ac tincidunt vitae semper quis lectus nulla at volutpat. Sed odio morbi quis commodo."
+            }'
+        ></include>
+        <include 
+            src="views/participant_card.html" 
+            locals='{
+                "image": "jeffery-erhunse-6D2Lmtv_X8A-unsplash.jpg",
+                "name": "Hillary",
+                "desc": "Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Ac tincidunt vitae semper quis lectus nulla at volutpat. Sed odio morbi quis commodo."
+            }'
+        ></include>
+        <include 
+            src="views/participant_card.html" 
+            locals='{
+                "image": "ali-karimiboroujeni-5-qwtyU0BFg-unsplash.jpg",
+                "name": "María",
+                "desc": "Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Ac tincidunt vitae semper quis lectus nulla at volutpat. Sed odio morbi quis commodo."
+            }'
+        ></include>
+        <include 
+            src="views/participant_card.html" 
+            locals='{
+                "image": "braden-egli-k_H7OSg_fUs-unsplash.jpg",
+                "name": "Iñaki",
+                "desc": "Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Ac tincidunt vitae semper quis lectus nulla at volutpat. Sed odio morbi quis commodo."
+            }'
+        ></include>
+        <include 
+            src="views/participant_card.html" 
+            locals='{
+                "image": "jeffery-erhunse-6D2Lmtv_X8A-unsplash.jpg",
+                "name": "Elisa",
+                "desc": "Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Ac tincidunt vitae semper quis lectus nulla at volutpat. Sed odio morbi quis commodo."
+            }'
+        ></include>
+      </div>
+      <div class="cta-container rounded">
+        <include src="./views/cta_inscription.html"></include>
+      </div>
+      
+    </main>
+
+    <include src="./views/footer.html"></include>
+    
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>

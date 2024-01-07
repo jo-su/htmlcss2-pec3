@@ -1,0 +1,10 @@
+@use "sass:color";
+
+$font-family-sans-serif: "Josefin Sans", sans-serif;
+$font-family-serif: "Hedvig Letters Sans", serif;
+
+$uoc-corporate: #000078;
+$uoc-masterbrand: #73edff;
+$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+
+$mqMinWidth: 420px;
